@@ -11,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
+  "associatedIndex": 0
 }]]></component>
   <component name="ProjectId" id="2hTzS95lwvygKDFl20niq9NMqcI" />
   <component name="ProjectViewState">
@@ -23,6 +23,7 @@
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Thawan/IdeaProjects/carrot-cakes-problem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717632851686</updated>
       <workItem from="1717632852761" duration="3584000" />
+      <workItem from="1717637081301" duration="691000" />
     </task>
     <servers />
   </component>
