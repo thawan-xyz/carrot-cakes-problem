@@ -2,26 +2,24 @@ fun main() {
     val (cakesNeeded, bakingTime, cakesPerBatch, buildOvenTime) = readln().split(" ").map(String::toInt)
 
     var cakesBaked = 0
-    var iOvenTimer = 0
-    var jOvenTimer = 0
+    var ovenTimer = 0
 
     while (cakesBaked < cakesNeeded) {
-        iOvenTimer += 1
+        ovenTimer += 1
 
-        if (iOvenTimer % bakingTime == 0) {
+        if (ovenTimer % bakingTime == 0) {
             cakesBaked += cakesPerBatch
         }
 
-        if (iOvenTimer > buildOvenTime) {
-            jOvenTimer += 1
-            if (jOvenTimer % bakingTime == 0) {
+        if (ovenTimer > buildOvenTime) {
+            if ((ovenTimer - buildOvenTime) % bakingTime == 0) {
                 cakesBaked += cakesPerBatch
             }
         }
     }
 
     val timeWithOneOven = ((cakesNeeded + (cakesPerBatch - 1)) / cakesPerBatch) * bakingTime
-    val timeWithTwoOvens = iOvenTimer
+    val timeWithTwoOvens = ovenTimer
 
     println(if (timeWithOneOven > timeWithTwoOvens) "YES" else "NO")
 }
